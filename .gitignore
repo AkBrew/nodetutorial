@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Custom
+config/nodeauth-43778-firebase-adminsdk-2ma9o-89cbe6801f.json
