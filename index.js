@@ -1,19 +1,12 @@
 const express = require('Express');
 const app = express();
-const routes = require('./routes.js');
-// const app = express();
-const cors = require("cors");
-const authMiddleWare = require('./auth_middleware');
-app.use(cors());
-const apiRoutes = require('./api_routes');
 
+const port = process.evn.PORT || 3000;
 
-// app.use('/movie', apiRoutes);
+app.use((req, res)=>{
+    res.send("hellow cyclic");
+});
 
-app.get("/books", (request, response) => {
-    return response.send({ books });
-  });
-
-app.use(apiRoutes);
-
-app.listen(3000);
+app.listen(port, ()=>{
+    console.log("Server is running");
+}
