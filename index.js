@@ -3,9 +3,8 @@ const app = express();
 
 const port = process.evn.PORT || 3000;
 
-app.use((req, res)=>{
-    res.send("hellow cyclic");
-});
+app.get("/", (req,res){
+        console.log("finally running");});
 
 app.listen(port, ()=>{
     console.log("Server is running");
