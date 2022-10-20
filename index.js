@@ -5,7 +5,7 @@ const port = process.evn.PORT || 3000;
 
 app.get("/", (req,res)=>{
         res.send("Hello cyclic");
-        console.log("finally running");});
+        console.log("please run");});
 
 app.listen(port, ()=>{
     console.log("Server is running");
